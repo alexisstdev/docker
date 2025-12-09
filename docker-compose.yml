@@ -2,7 +2,7 @@ version: '3'
 
 services:
   invoiceshelf:
-    image: invoiceshelf/invoiceshelf:nightly
+    build: .
     ports:
       - "${PORT}:80" # Importante: Railway asigna el puerto dinámicamente
     environment:
